@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1363DF;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px 35px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: 1px solid black; */
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.container .content {
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.quote-area {
+    display: flex;
+    justify-content: center;
+}
+
+.quote-area i {
+    font-size: 20px;
+}
+
+.quote-area i:first-child {
+    margin-top: 3px;
+}
+
+.quote-area i:last-child {
+    margin-bottom: 3px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.quote-area .quote {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 300;
+    padding: 0 5px;
+}
+
+.content .pengarang {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.pengarang span:first-child {
+    margin-top: -6px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons button {
+    padding: 10px 15px;
+    background-color: #1F4690;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #1F4690;
+    transition: .3s all;
+}
+
+.buttons button:hover {
+    background-color: transparent;
+    color: #1F4690;
+    border: 1px solid #1F4690;
+}
+
+.buttons .features {
+    display: flex;
+}
+
+.buttons .features li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #1F4690;
+    list-style: none;
+    margin: 0 3px;
+    cursor: pointer;
+    padding: 15px;
+    transition: .3s all;
+    color: #1F4690;
+}
+
+.buttons .features li:hover {
+    z-index: 1;
+    background-color: #1F4690;
+    color: #fff;
+}
+
+.features .whatsapp {
+    font-size: 20px;
+}
+
+/* 
+.buttons .features li i {
+    font-size: 14px;
+    color: #1F4690;
+} */
+
+@media (max-width: 400px) {
+    .buttons {
+        /* flex-direction: column; */
+        grid-gap: 2rem;
+    }
+
+    .quote-area .quote {
+        font-size: 18px;
+    }
+
+    .buttons .features li {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .buttons {
+        justify-content: space-around;
+    }
+
+    .buttons button {
+        padding: 5px 10px;
+    }
+}
